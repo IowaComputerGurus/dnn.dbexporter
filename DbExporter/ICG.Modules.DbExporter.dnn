@@ -1,0 +1,96 @@
+<dotnetnuke type="Package" version="5.0">
+  <packages>
+    <package name="ICG.Modules.DbExporter" type="Module" version="7.0.1">
+      <friendlyName>Database Exporter</friendlyName>
+      <description>A simple SQL based data export utility for DotNetNuke 7.0.0 and later</description>
+      <owner>
+        <name>Mitchel Sellers</name>
+        <organization>IowaComputerGurus Inc.</organization>
+        <url>http://www.iowacomputergurus.com</url>
+        <email>webmaster@iowacomputergurus.com</email>
+      </owner>
+      <license><![CDATA[
+         <p>Copyright (c) 2007-2016 IowaComputerGurus Inc (http://www.iowacomputergurus.com)
+ Copyright Contact: webmaster@iowacomputergurus.com</p>
+ 
+ <p>Permission is hereby granted, free of charge, to any person obtaining a copy 
+ of this software and associated documentation files (the "Software"), to deal 
+ in the Software without restriction, including without limitation the rights to use, 
+ copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, 
+ and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+ 
+ <p>The above copyright notice and this permission notice shall be included in all copies or substantial 
+ portions of the Software. </p>
+ 
+ <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT 
+ NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. 
+ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, 
+ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
+ OR THE USE OR OTHER DEALINGS IN THE SOFTWARE</p>
+        
+        ]]>
+      </license>
+      <releaseNotes>
+        <![CDATA[
+          <h3>Version 07.00.00 - June 30th, 2016</h3>
+          <p>Module release to improve stability and confirm fitment for DNN 8.x and later releases.</p>
+        
+          <h3>Version 06.00.01 - November 1st, 2012</h3>
+          
+          <p>Cleanup release and migration to CodePlex.</p>
+          
+          <h3>Version 06.00.00 - July 3rd, 2012</h3>
+          
+          <p>Updated for DotNetNuke Version 06.00.00 and later</p>
+        ]]>
+      </releaseNotes>
+      <dependencies>
+        <dependency type="CoreVersion">07.00.00</dependency>
+      </dependencies>
+      <components>
+        <component type="Module">
+          <desktopModule>
+            <moduleName>ICG.Modules.DbExporter</moduleName>
+            <foldername>IowaComputerGurus/DbExporter</foldername>
+            <businessControllerClass />
+            <supportedFeatures />
+            <moduleDefinitions>
+              <moduleDefinition>
+                <friendlyName>Database Exporter</friendlyName>
+                <defaultCacheTime>0</defaultCacheTime>
+                <moduleControls>
+                  <moduleControl>
+                    <controlKey />
+                    <controlSrc>DesktopModules/IowaComputerGurus/DbExporter/ViewDbExporter.ascx</controlSrc>
+                    <supportsPartialRendering>False</supportsPartialRendering>
+                    <controlTitle />
+                    <controlType>View</controlType>
+                    <iconFile />
+                    <helpUrl />
+                    <viewOrder>0</viewOrder>
+                  </moduleControl>
+                </moduleControls>
+              </moduleDefinition>
+            </moduleDefinitions>
+          </desktopModule>
+        </component>
+        <component type="Assembly">
+          <assemblies>
+            <basePath>bin</basePath>
+            <assembly>
+              <name>ICG.Modules.DBExporter.dll</name>
+            </assembly>
+          </assemblies>
+        </component>
+        <component type="ResourceFile">
+          <resourceFiles>
+            <basePath>DesktopModules/IowaComputerGurus/DbExporter</basePath>
+            <resourceFile>
+              <name>Resources.zip</name>
+            </resourceFile>
+          </resourceFiles>
+        </component>
+      </components>
+    </package>
+  </packages>
+</dotnetnuke>
