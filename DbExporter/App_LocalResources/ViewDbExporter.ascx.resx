@@ -126,8 +126,8 @@
   <data name="btnExportToXML.Text" xml:space="preserve">
     <value>Export To XML</value>
   </data>
-  <data name="EditPermission.Text" xml:space="preserve">
-    <value>&lt;p&gt;You must have edit permission on this module instance to be able to execute/export queries&lt;/p&gt;</value>
+  <data name="NotHostUser.Text" xml:space="preserve">
+    <value>&lt;p&gt;You must be a Host (SuperUser) to be able to execute/export queries&lt;/p&gt;</value>
   </data>
   <data name="lblQuery.Help" xml:space="preserve">
     <value>Your SQL Query to execute.  NOTE: this query must start with SELECT.`</value>
